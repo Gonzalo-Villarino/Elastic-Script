@@ -1,0 +1,15 @@
+GET sapiens_text/_search
+{
+  "query": {
+    "match": {
+      "content": "Sapiens"
+    }
+  },
+  "size": 113,
+  "_source": ["page"],
+  "sort": [
+    {
+      "page": "asc"
+    }
+  ]
+}
